@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kushubha">
+    <meta name="description" content="medguard">
+    <title>MedGuard</title>
+</head>
+<body>
+    <!--language selection-->
+    <section id="language-screen">
+        <h1>MedGuard</h1>
+        <h3>select the language you want</h3>
+        <div>
+        <button type="button">English</button>
+        <button type="button">हिन्दी </button>
+        <button type="button">తెలుగు</button>
+        </div>
+        </section>
+
+
+    <!--the scanning hub-->
+    <section id="scanner-interface">
+        <h2>Check your Medicine</h2>
+        <div>
+            <button type="button" id="camera-btn">
+                 📷 <strong>Open Camera</strong>
+            </button>
+            <input type="file" id="upload-input" accept="image/*" hidden>
+                    <button type="button" id="upload-btn">📁 Upload Photo</button>
+        </div>
+    </section>
+    
+
+<!--verfication-->
+<article id="result-card">
+    <div class="medication-header">
+                    <h3>Medication Name: <span id="detected-name">Pending...</span></h3>
+                    <p id="expiry-status">Check Expiry: --/--/--</p>
+                </div>
+
+                <!-- Visual Match - The "Similar Pics" feature you mentioned -->
+                <div id="visual-match">
+                    <p>Does it look like this?</p>
+                    <img src="placeholder.png" alt="Drug Strip Visual" id="ref-image">
+                </div>
+
+
+                <!-- Side Effects & Info Box -->
+                <div id="med-details">
+                    <h4>What is it for?</h4>
+                    <p id="med-purpose">Scan to see details.</p>
+
+                    <h4>⚠️ Side Effects & Risks</h4>
+                    <p id="med-warnings">Important safety info here.</p>
+                </div>
+
+                <!-- Audio Output for Illiterate Users -->
+                <button id="voice-output-btn">🔊 Listen</button>               
+</article>
+
+            <!-- 3. Urgent Action Call -->
+            <section id="emergency-contact">
+                <p>Not sure? Call a doctor immediately.</p>
+                <a href="tel:108">📞 Call Emergency</a>
+            </section>
+
+        <!-- Navigation -->
+            <nav>
+                <button>Home</button>
+                <button>History</button>
+                <button>Help</button>
+            </nav>
+    <footer>
+    <hr>
+    <p><strong>⚠️ Medical Disclaimer:</strong> This app is a student project for educational purposes. Information may not be accurate. <strong>Always consult a licensed doctor before taking any medication.</strong></p>
+</footer>
+
+</body>
+</html>
